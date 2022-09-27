@@ -28,10 +28,6 @@ export class App extends Component {
     }
   }
 
-  componentWillUnmount() {
-    localStorage.removeItem("contacts");
-  }
-
   handleChange = (event) => {
     const { name, value } = event.target;
     this.setState({ [name]: value });
